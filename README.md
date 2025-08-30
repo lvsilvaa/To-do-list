@@ -26,9 +26,13 @@ JavaScript (ES6+) → manipulação da DOM e lógica da aplicação
 📂 Estrutura do Projeto
 
 📦 lista-de-tarefas
+
  ┣ 📜 index.html
+ 
  ┣ 📜 style.css
+ 
  ┣ 📜 script.js
+ 
  ┗ 📂 assets (imagens/ícones opcionais)
 
  📖 Aprendizados
@@ -70,6 +74,7 @@ Este projeto faz parte do meu portfólio como desenvolvedor, com o objetivo de d
 Se você gostou deste projeto e deseja conversar:
 
 💼 linkedin: https://www.linkedin.com/in/leonardosilva-826083231/
+
 📧 email: leonardoo.silvaa2012@gmail.com
 
 
