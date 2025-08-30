@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lista de Coisas — App Simples</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<body>
+  <main class="wrap" role="main">
+    <header>
+      <div>
+        <h1>Lista de afazeres</h1>
+        <p>Um app simples de tarefas (salva no navegador)</p>
+      </div>
+      <div class="small">LocalStorage • Sem backend</div>
+    </header>
+
+    <section class="controls" aria-label="Adicionar tarefa">
+      <form id="form" class="new" autocomplete="off">
+        <input id="inputText" type="text" placeholder="O que você precisa fazer? (ex: Comprar leite)" required />
+        <select id="inputPrio" aria-label="Prioridade">
+          <option value="low">Baixa</option>
+          <option value="medium">Média</option>
+          <option value="high">Alta</option>
+        </select>
+        <input id="inputDate" type="date" />
+        <button type="submit">Adicionar</button>
+      </form>
+
+      <div class="toolbar">
+        <div class="filters" role="tablist">
+          <button data-filter="all" class="active">Todas</button>
+          <button data-filter="active">Ativas</button>
+          <button data-filter="completed">Concluídas</button>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;margin-left:8px">
+          <button id="clearCompleted" class="ghost">Limpar concl.</button>
+          <button id="export" class="ghost">Export</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="list" class="list" aria-live="polite"></section>
+
+    <footer>
+      <div id="count">0 tarefas</div>
+      <div class="small">Dica: arraste para reordenar • Clique no texto para editar</div>
+    </footer>
+  </main>
+<script src="script.js"></script>
+  
+</body>
+</html>
